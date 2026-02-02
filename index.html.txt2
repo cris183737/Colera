@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Cólera | Historia Universal</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600;700&family=Montserrat:wght@300;500;700&family=Roboto+Slab:wght@400;700&family=Lora:wght@400;600&family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --azul:#001d3d;
+  --verde:#2ec4b6;
+  --rojo:#e63946;
+  --amarillo:#ffd166;
+  --gris:#2b2d42;
+  --blanco:#ffffff;
+}
+
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#f8f9fa;
+  color:#222;
+  transition:.4s;
+}
+
+.dark{
+  background:#0b132b;
+  color:#eaeaea;
+}
+
+header{
+  background:linear-gradient(120deg,var(--azul),#003566);
+  color:white;
+  padding:130px 15px;
+  text-align:center;
+}
+
+header h1{
+  font-family:'Playfair Display',serif;
+  font-size:4.5rem;
+}
+
+header p{
+  max-width:1000px;
+  margin:25px auto;
+  font-size:1.3rem;
+}
+
+nav{
+  position:sticky;
+  top:0;
+  background:var(--gris);
+  padding:18px;
+  text-align:center;
+  z-index:1000;
+}
+
+nav a{
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+nav a:hover{
+  color:var(--amarillo);
+}
+
+.toggle{
+  background:var(--amarillo);
+  border:none;
+  padding:10px 20px;
+  border-radius:25px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+section{
+  padding:100px 10%;
+}
+
+h2{
+  font-family:'Roboto Slab',serif;
+  font-size:3rem;
+  color:var(--azul);
+  margin-bottom:35px;
+}
+
+.dark h2{
+  color:#90dbf4;
+}
+
+h3{
+  color:var(--verde);
+}
+
+p{
+  text-align:justify;
+  margin-bottom:20px;
+}
+
+.img{
+  width:100%;
+  max-width:1100px;
+  display:block;
+  margin:50px auto;
+  border-radius:25px;
+  box-shadow:0 20px 45px rgba(0,0,0,.35);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:45px;
+  margin-top:50px;
+}
+
+.card{
+  background:white;
+  padding:35px;
+  border-radius:30px;
+  box-shadow:0 12px 35px rgba(0,0,0,.25);
+}
+
+.dark .card{
+  background:#1c2541;
+}
+
+.timeline{
+  border-left:6px solid var(--verde);
+  padding-left:40px;
+}
+
+.event{
+  margin-bottom:50px;
+}
+
+.event h4{
+  color:var(--rojo);
+  font-size:1.5rem;
+}
+
+.quote{
+  font-family:'Lora',serif;
+  font-style:italic;
+  background:#edf2f4;
+  padding:30px;
+  border-left:6px solid var(--verde);
+  margin:40px 0;
+}
+
+.dark .quote{
+  background:#1c2541;
+}
+
+button.info{
+  background:var(--verde);
+  border:none;
+  padding:12px 25px;
+  color:white;
+  border-radius:25px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+footer{
+  background:var(--gris);
+  color:white;
+  text-align:center;
+  padding:50px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>El Cólera</h1>
+<p>
+Análisis histórico, social, científico y político de una de las enfermedades
+más influyentes en la historia de la humanidad.
+</p>
+</header>
+
+<nav>
+<a href="#origen">Origen</a>
+<a href="#pandemias">Pandemias</a>
+<a href="#linea">Línea del tiempo</a>
+<a href="#impacto">Impacto</a>
+<a href="#ciencia">Ciencia</a>
+<a href="#comparacion">Comparación</a>
+<a href="#fuentes">Fuentes</a>
+<button class="toggle" onclick="document.body.classList.toggle('dark')">
+Modo oscuro
+</button>
+</nav>
+
+<section id="origen">
+<h2>Origen histórico del cólera</h2>
+<p>
+El cólera surgió en el delta del río Ganges, región caracterizada por
+altas concentraciones humanas y deficiencias sanitarias.
+Durante siglos fue una enfermedad local hasta que el comercio global
+permitió su expansión.
+</p>
+
+<img class="img" src="https://images.unsplash.com/photo-1549887534-4b1f6b33c2f9">
+<img class="img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+</section>
+
+<section id="pandemias">
+<h2>Las pandemias del siglo XIX</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Primera pandemia (1817–1824)</h3>
+<p>
+Se expandió desde Asia hacia África y Europa mediante rutas comerciales.
+</p>
+</div>
+
+<div class="card">
+<h3>Segunda pandemia (1829–1851)</h3>
+<p>
+Llegó a América. Se establecieron cuarentenas y cordones sanitarios.
+</p>
+</div>
+
+<div class="card">
+<h3>Tercera pandemia (1852–1860)</h3>
+<p>
+La más letal. Coincide con grandes transformaciones urbanas.
+</p>
+</div>
+
+</div>
+
+<img class="img" src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144">
+</section>
+
+<section id="linea">
+<h2>Línea del tiempo histórica</h2>
+<div class="timeline">
+
+<div class="event">
+<h4>1817</h4>
+<p>Inicio de la primera pandemia en India.</p>
+</div>
+
+<div class="event">
+<h4>1832</h4>
+<p>El cólera llega a México y Estados Unidos.</p>
+</div>
+
+<div class="event">
+<h4>1854</h4>
+<p>
+John Snow demuestra que el cólera se transmite por agua contaminada.
+</p>
+</div>
+
+<div class="event">
+<h4>1883</h4>
+<p>
+Robert Koch identifica la bacteria Vibrio cholerae.
+</p>
+</div>
+
+<div class="event">
+<h4>Siglo XX</h4>
+<p>
+Reducción drástica en países industrializados.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="impacto">
+<h2>Impacto social, político y económico</h2>
+<p>
+El cólera obligó a los Estados a asumir la responsabilidad de la salud pública.
+</p>
+
+<ul>
+<li>Creación de ministerios de salud</li>
+<li>Control del agua potable</li>
+<li>Reformas urbanas</li>
+<li>Desarrollo del Estado moderno</li>
+</ul>
+
+<div class="quote">
+“El cólera no solo mató personas, cambió ciudades y gobiernos.”
+</div>
+
+<img class="img" src="https://images.unsplash.com/photo-1603398938378-e54eab446dde">
+</section>
+
+<section id="ciencia">
+<h2>Avances científicos</h2>
+<p>
+El estudio del cólera dio origen a la epidemiología moderna.
+</p>
+
+<img class="img" src="https://images.unsplash.com/photo-1584515933487-779824d29309">
+</section>
+
+<section id="comparacion">
+<h2>Pasado vs presente</h2>
+<div class="grid">
+<div class="card">
+<h3>Siglo XIX</h3>
+<p>Alta mortalidad, desconocimiento, miedo social.</p>
+</div>
+
+<div class="card">
+<h3>Actualidad</h3>
+<p>Prevención, tratamiento efectivo, control sanitario.</p>
+</div>
+</div>
+</section>
+
+<section id="fuentes">
+<h2>Fuentes históricas (APA)</h2>
+<p>
+Snow, J. (1855). <em>On the Mode of Communication of Cholera</em>. London.  
+<br>
+Koch, R. (1884). <em>Die Ätiologie der Cholera</em>. Berlin.  
+<br>
+OMS. (2023). <em>Cholera Fact Sheet</em>.
+</p>
+</section>
+
+<footer>
+<p>
+Proyecto de Historia  
+<br>
+Christian de Jesús Cruz Gómez  
+<br>
+Grupo 19 · Número de lista 3
+</p>
+</footer>
+
+</body>
+</html>
